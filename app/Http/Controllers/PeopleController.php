@@ -10,7 +10,6 @@ class PeopleController extends Controller
 {
     public function people()
     {
-//        $response = Http::get('https://swapi.dev/api/people/');
         $response = Http::get('https://swapi.py4e.com/api/people/');
         $jsonData = $response->json();
 
